@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2/js</title>
+</head>
+<body>
+    <select name="fontType" id="fontType"  onchange="changeFont()">
+        <option value="Times New Roman" >Times New Roman</option>
+        <option value="fantasy" >fantasy</option>
+        <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+    </select>
+    <select name="size" id="size" onchange=" changeSize() ">
+        <option value="10px">10px</option>
+        <option value="15px">15px</option>
+        <option value="20px">20px</option>
+    </select>
+    <div class="italic-type" style="display: inline-block;">
+        <input type="checkbox" id="italic-style" name="italic-style" onclick="italic_function()" >
+        <label>Italic</label>
+    </div>
+    <div class="bold-type" style="display: inline-block;">
+        <input type="checkbox"  id="bold-style" name="bold-style" onclick=bold_function() >
+        <label>Bold</label>
+    </div>
+    <div class="Underline-type" style="display: inline-block;">
+        <input type="checkbox"  id="underline-style" name="underline-style" onclick=underline_function()  >
+        <label>Underline</label>
+    </div>
+    <div class="content" style="border: 1px solid black;  padding: 10px; width: 50%; margin: 10px 0"><p>the quick brown fox over the lazy dog</p></div>
+    <button  id ="btn-text" style="background: yellow; padding: 20px; font-weight: bold; width:300px;" onmouseover="changeText()" onmouseout="changeText2()">Can I help you?</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
