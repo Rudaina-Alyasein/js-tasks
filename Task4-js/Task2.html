@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #FFF3E0;
+    }
+    
+    .navbar .logo img {
+        height: 40px;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-links li {
+        margin-left: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #0790af;
+        font-size: 18px;
+    }
+    
+    .burger {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #0790af;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #FFF3E0;
+            width: 100%;
+        }
+    
+        .nav-links.active {
+            display: flex;
+        }
+    
+        .nav-links li {
+            margin: 10px 0;
+            text-align: center;
+        }
+    
+        .burger {
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <div class="burger" id="burgerMenu" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+    </nav>
+    <script >
+        function toggleMenu() {
+    var navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html>

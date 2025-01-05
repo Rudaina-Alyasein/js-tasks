@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  
+    #registrationForm {
+    font-family: Arial, sans-serif;
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="text"], input[type="number"], input[type="date"], input[type="file"], input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: #e7e7e7;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .checkbox-group {
+    margin-bottom: 12px;
+  }
+
+  hr {
+    border: solid 0.5px black;
+    margin: 15px 0;
+  }
+    #container {
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; 
+    color: #333; 
+  }
+
+  #container h3 {
+    text-align: center; 
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    color: #444; 
+  }
+
+  #container p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin: 10px 0; 
+  }
+
+  #container img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    display: block; 
+  }
+
+  #container strong {
+    color: #555; 
+  }
+  </style>
+  
+</head>
+<body>
+
+  <form id="registrationForm">
+    <label>Name:</label>
+    <input type="text" id="nameField">
+  
+    <label>Age:</label>
+    <input type="number" id="ageField">
+  
+    <label>Birth Date:</label>
+    <input type="date" id="birthDateField">
+  
+    <label>Upload your image:</label>
+    <input type="file" id="imageUploadField">
+  
+    <hr style="border:solid .5px black; margin: 10px;">
+  
+    <label>Description:</label>
+    <input type="text" id="descriptionField">
+  
+    <label>Major & University:</label>
+    <input type="text" id="majorUniversityField">
+  
+    <label>Programming Language:</label>
+    <div style="display: flex;">
+      <input type="checkbox" id="htmlCheckbox" name="html" value="html">
+      <label for="htmlCheckbox">HTML</label><br>
+  
+      <input type="checkbox" id="cssCheckbox" name="css" value="css">
+      <label for="cssCheckbox">CSS</label><br>
+  
+      <input type="checkbox" id="jsCheckbox" name="js" value="js">
+      <label for="jsCheckbox">JS</label><br>
+    </div>
+  
+    <label>Siblings Number:</label>
+    <input type="number" id="siblingsNumberField">
+  
+    <label>Description of Siblings:</label>
+    <input type="text" id="siblingsDescriptionField">
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+  <div id="container">
+
+  </div>
+  
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
