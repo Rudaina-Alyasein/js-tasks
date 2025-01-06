@@ -48,16 +48,17 @@
     @media screen and (max-width: 768px) {
         .nav-links {
             display: none;
+           
+        }
+    
+        .nav-links.active {
+            display: flex;
             flex-direction: column;
             position: absolute;
             top: 40px;
             left: 0;
             background-color: #FFF3E0;
             width: 100%;
-        }
-    
-        .nav-links.active {
-            display: flex;
         }
     
         .nav-links li {
