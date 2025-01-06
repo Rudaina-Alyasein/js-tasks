@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+        }
+        .scroll-to-top{
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            background-color: red;
+            border-radius: 50px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+        }
+        #caret1 {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+           }
+           .scroll-to-top.show {
+            opacity: 1;
+            }
+ 
+    </style>
+</head>
+<body>
+    <section class="navbar" style="display: flex; align-items: center; justify-content: space-between; padding: auto 10px; background-color: black; color:white">
+        <b style="margin:auto 10px">Logo</b>
+        <ul style="display: flex; align-items: center; list-style:none; gap:15px; ">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Home</li>
+        </ul>
+        <b style="margin:auto 10px">Log in</b>
+    </section>
+    <section class="herosection" style="display: flex; gap:10px">
+        <img src="img\booklib.jpeg" style="width: 700px;">
+        <div><h1>Welcome To ou Library</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+            <button style="padding:20px; ">Explore more</button>
+        </div>
+
+
+        
+    </section>
+    <section class="FAQ">
+        <h2 style="margin: 20px; font-size: 64px; text-align: center;">FAQ</h2>
+        <div style="background-color: antiquewhite;padding: 20px; margin: 20px; border-radius: 20px;">
+            <p style="font-size: 32px;">What is the purpose of this website?</p>
+        </div>
+        <div style="background-color: antiquewhite;padding: 20px; margin: 20px; border-radius: 20px;">
+            <p style="font-size: 32px;">How can I create an account or log in?</p>
+        </div>
+        <div style="background-color: antiquewhite;padding: 20px; margin: 20px; border-radius: 20px;">
+            <p style="font-size: 32px;">What payment methods do you accept?</p>
+        </div>
+        <div style="background-color: antiquewhite;padding: 20px; margin: 20px; border-radius: 20px;">
+            <p style="font-size: 32px;">Can I track my order or check its status?</p>
+        </div>
+        <div style="background-color: antiquewhite;padding: 20px; margin: 20px; border-radius: 20px;">
+            <p style="font-size: 32px;">Who should I contact if I need support or have a question?</p>
+        </div>
+    </section>
+    <div  class="scroll-to-top" >
+        <i class="fas fa-caret-up" id="caret1"></i>
+    </div>
+<script>
+    
+  
+    const scrollToTopBtn = document.getElementsByClassName('scroll-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) { 
+        scrollToTopBtn[0].classList.add('show');
+      } else {
+        scrollToTopBtn[0].classList.remove('show');
+      }
+    });
+
+    
+    scrollToTopBtn[0].addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  
+</script>    
+    
+</body>
+</html>

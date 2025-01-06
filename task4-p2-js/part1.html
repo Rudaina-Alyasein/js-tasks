@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+</head>
+<body>
+    <select id="flags">
+        <option value="Palastein">Palastein</option>
+        <option value="Jordan">Jordan</option>
+        <option  value="Oman">Oman</option>
+        <option value="Saudi">Saudi</option>
+    </select>
+    <div style=" margin:5px ;border: 1px solid; width:350px; height:180px;">
+        <img  src="img\palestine.png" id="flag_image"style="width:350px; height:180px;">
+
+    </div>
+    <script>
+        let flag=document.getElementById('flags');
+        console.log(flag)
+        flag.addEventListener("change",()=>{
+            let choice=flag.value;
+            switch(choice){
+                case "Palastein" :{
+                    document.getElementById("flag_image").src="img/palestine.png";
+                    break;
+                }
+                case "Jordan" :{
+                    document.getElementById("flag_image").src="img/jordan.png";
+                    break;
+                }
+                case "Oman" :{
+                    document.getElementById("flag_image").src="img/oman.png";
+                    break;
+                }
+                case "Saudi" :{
+                    document.getElementById("flag_image").src="img/saudia.jpg";
+                    break;
+                }
+                }
+                    
+            
+
+        });
+        
+
+    </script>
+</body>
+</html>
